@@ -80,6 +80,22 @@ img{
   transition: all 1.2s cubic-bezier(.2, 0, .175, 1);
 }
 
+.loader01.is-in-ini{
+  background-color: #fff;
+  top: 100vh;
+  transform: translateY(-100%) translateZ(0);
+  transition: transform 1.2s cubic-bezier(.77, 0, .175, 1);
+}
+.loader01-logo-img.is-in01-ini{
+  color: #000;
+  transform: translateY(50%) translateZ(0);
+}
+.loader01-logo-img.is-in00-ini{
+  color: #000;
+  transform: translateY(0) translateZ(0);
+  transition: all 1.2s cubic-bezier(.2, 0, .175, 1);
+}
+
 
 
 .loader02 {
