@@ -1,0 +1,134 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+body{
+  background-color: rgb(193, 219, 150);
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  display: block;
+}
+
+.loader01 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow: clip;
+  background: #000;
+  z-index: 10;
+}
+.loader01-inner {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+.loader01-logo {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  overflow: clip;
+}
+
+
+.loader01.is-out{
+  transform: translateY(-100%) translateZ(0);
+  transition: transform 1.2s cubic-bezier(.77, 0, .175, 1);
+}
+.loader01-logo-img.is-out{
+  color: #fff;
+  transform: translateY(-50%) translateZ(0);
+  transition: transform 1.2s cubic-bezier(.77, 0, .175, 1);
+}
+
+.loader01.is-in{
+  background-color: #000;
+  top: 100vh;
+  transform: translateY(-100%) translateZ(0);
+  transition: transform 1.2s cubic-bezier(.77, 0, .175, 1);
+}
+.loader01-logo-img.is-in01{
+  color: #fff;
+  transform: translateY(50%) translateZ(0);
+}
+.loader01-logo-img.is-in00{
+  color: #fff;
+  transform: translateY(0) translateZ(0);
+  transition: all 1.2s cubic-bezier(.2, 0, .175, 1);
+}
+
+
+
+.loader02 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow: clip;
+  background: #000;
+  z-index: 1;
+}
+.loader02-inner {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.loader02-logo {
+  position: relative;
+  overflow: hidden;
+  /* overflow: clip; */
+}
+.loader02.is-out, 
+.loader02-logo-img.is-out{
+  transform: translateY(100%) translateZ(0);
+  transition: transform 1.2s cubic-bezier(.77, 0, .175, 1);
+}
+
+
+
+.button {
+  margin-top: 5vh;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.button a{
+  color: rgb(193, 219, 150);
+  display: block;
+  text-align: center;
+  padding: 10px 30px;
+  width: 100%;
+  height: 100%;
+}
