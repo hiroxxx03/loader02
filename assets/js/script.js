@@ -53,7 +53,7 @@ $(function() {
       // $('.loader01-logo-img').toggleClass('is-in');
       setTimeout(function(){
         window.location = url;
-      }, 1900);
+      }, 1800);
     }
     return false;
   });
